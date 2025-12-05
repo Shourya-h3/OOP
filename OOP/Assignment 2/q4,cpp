@@ -1,0 +1,47 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class DB;
+
+class DM{
+private:
+	double meter;
+	double centimeter;
+public: 
+	DM(double m =0; double cm =0): meter(m), centimeter(cm) {}
+	
+	void input(){
+	cout<<"Enter the meter: ";
+	cin>>meter;
+	cout<<"Enter the centimeter: ";
+	cin>>centimeter;
+	}
+	display display() const{
+		cout<<meter <<" meter "<<centimeter<<" centimeter "<<endl; 
+	}
+	friend DM add(Dm dm. DB db);
+	
+}
+
+class DB{
+private:
+	double feet;
+	double inches;
+public: 
+	DM(double f =0; double i =0): feet(f), inches(i) {}
+	
+	void input(){
+	cout<<"Enter the feet: ";
+	cin>>feet;
+	cout<<"Enter the inches: ";
+	cin>>inches;
+	}
+	display display() const{
+		cout<<feet <<" feet "<<inches<<" inches "<<endl; 
+	}
+	friend DM add(Dm dm. DB db);
+}
+DM add(Dm dm. DB db){
+	double totalmeter =
+}
